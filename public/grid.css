@@ -24,24 +24,45 @@
     background-color: white;
     padding: 5%;
 }
+
+.container-5 {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: white;
+    text-align: center;
+    font-size: 7vw;
+    font-family: 'Raleway', sans-serif;
+}
+
 .header {
     grid-column: 1 / span 6;
     grid-row: 1 / span 1;
 }
 .nav {
-    grid-column: 3 / span 2;
+    /* grid-column: 3 / span 2;
     position: fixed;
-    right: 5%;
+    right: 5%; */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 400px;
+    right:0;
+    background-color: white;
+    display: none;
+}
+.nav ul {
+    padding-left: 0px;
+    margin-top: 0px;
 }
 .nav ul li {
     display: inline-block;
     font-family: 'Nunito Sans', sans-serif;
-    color: white;
+    color: rgb(0, 0, 0);
     list-style: none;
 }
 
 ul li a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -65,6 +86,7 @@ ul li a {
 }
 .node {
     justify-self: center;
+    align-self: end;
 }
 .mongo {
     justify-self: center;
@@ -77,8 +99,9 @@ ul li a {
 .projects {
     width: 80%;
     height: auto;
-    border:2px solid rgb(89, 89, 89);
-    border-radius: 1px;
+    border:1px solid rgb(89, 89, 89);
+    border-radius: 0px;
+    margin: 20px 0;
 }
 
 
@@ -86,9 +109,14 @@ ul li a {
 
 /* Media Queries */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     .react {
         grid-column: 2 / span 1;
     }
 }
-   
+
+@media only screen and (max-width: 1214 px) {
+    .fourth-project {
+        grid-column: 2 / span 1;
+    }
+}

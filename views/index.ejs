@@ -10,24 +10,29 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:600|Raleway:700" rel="stylesheet">
+    <script src="https://use.fontawesome.com/bbe3a347a0.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <nav class="nav" role="navigation">
+        <nav class="nav right-mobile" role="navigation" id="side-nav">
             <ul>
                 <li>
-                    <a href="#">About</a>
+                    <button class="button-mobile">About</button>
                 </li>
                 <li>
-                    <a href="#">Portfolio</a>
+                    <button class="button-mobile">Portfolio</button>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <button class="button-mobile">Contact</button>
+                </li>
+                <li>
+                    <button class="go-back">Go Back</button>
                 </li>
             </ul>
         </nav>
         <div class="header">
+                <i class="fa fa-bars fa-3x" id="hamburger"></i>
             <h1>
                 <%= person.firstName %>
                     <%= person.lastName %>
@@ -56,16 +61,16 @@
     </div>
     <div class="container-3">
         <div>
-            <img src="./vstda.png" class="projects shadow">
+            <img src="./vstda.png" class="projects shadow first-project">
         </div>
         <div>
-            <img src="./mortgage-calculator.png" class="projects shadow">
+            <img src="./mortgage-calculator.png" class="projects shadow second-project">
         </div>
         <div>
-            <img src="./change-calculator.png" class="projects shadow">
+            <img src="./change-calculator.png" class="projects shadow third-project">
         </div>
         <div>
-            <img src="./top-spots.png" class="projects shadow">
+            <img src="./top-spots.png" class="projects shadow fourth-project">
         </div>
     </div>
     <div class="container-4">
@@ -83,23 +88,27 @@
         </div>
     </div>
     </div>
+    <div class="container-5">
+        <h2>Holler At Me</h2>
+    </div>
     <form class="form1" action="">
         <label for="name" class="name">
             Name
         </label>
-        <input id="name" type="text">
+        <input id="name-input" type="text">
         <label for="email">
             Email
         </label>
-        <input id="email" type="email">
-        <label for"message">
+        <input id="email-input" type="email">
+        <label for "message">
             Message
         </label>
-        <textarea id="message"></textarea>
+        <textarea id="message-input"></textarea>
         <button>
             Submit
         </button>
     </form>
+    <script src="main.js"></script>
 </body>
 
 </html>
