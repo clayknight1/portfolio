@@ -3,11 +3,13 @@
     grid-template-rows: 450px;
     grid-template-columns: 10% 1fr  1fr 1fr 1fr 10%;
     grid-row-gap: 30px;
+    background-attachment: fixed;
 }
 .container-2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 10px;
+    padding: 2em 0px;
 }
 .container-3 {
     display: grid;
@@ -39,17 +41,27 @@
     grid-row: 1 / span 1;
 }
 .nav {
-    /* grid-column: 3 / span 2;
-    position: fixed;
-    right: 5%; */
     position: fixed;
     top: 0;
     bottom: 0;
     width: 400px;
-    right:0;
+    right:-400px;
     background-color: white;
-    display: none;
+    /* display: none;
+    
+    */
+    transition: right .5s;
+    /* -webkit-animation: slide 1s;
+    animation: slide 1s; */
+
 }
+@-webkit-keyframes slide {
+    100% { right: 0; }
+}
+@keyframes slide {
+    100% { right: 0; }
+}
+
 .nav ul {
     padding-left: 0px;
     margin-top: 0px;

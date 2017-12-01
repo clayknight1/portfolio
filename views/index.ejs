@@ -13,21 +13,18 @@
     <script src="https://use.fontawesome.com/bbe3a347a0.js"></script>
 </head>
 
-<body>
+<body class="preload">
     <div class="container">
         <nav class="nav right-mobile" role="navigation" id="side-nav">
             <ul>
                 <li>
-                    <button class="button-mobile">About</button>
+                    <i class= "fa fa-times fa-5x" id="close-nav"></i><button class="button-mobile">About</button>
                 </li>
                 <li>
                     <button class="button-mobile">Portfolio</button>
                 </li>
                 <li>
                     <button class="button-mobile">Contact</button>
-                </li>
-                <li>
-                    <button class="go-back">Go Back</button>
                 </li>
             </ul>
         </nav>
@@ -61,16 +58,16 @@
     </div>
     <div class="container-3">
         <div>
-            <img src="./vstda.png" class="projects shadow first-project">
+            <a href="#" class=".hvr-grow"><img src="./vstda.png" class="projects shadow first-project grow"></a>
         </div>
         <div>
-            <img src="./mortgage-calculator.png" class="projects shadow second-project">
+            <img src="./mortgage-calculator.png" class="projects shadow second-project grow">
         </div>
         <div>
-            <img src="./change-calculator.png" class="projects shadow third-project">
+            <img src="./change-calculator.png" class="projects shadow third-project grow">
         </div>
         <div>
-            <img src="./top-spots.png" class="projects shadow fourth-project">
+            <img src="./top-spots.png" class="projects shadow fourth-project grow">
         </div>
     </div>
     <div class="container-4">
@@ -91,19 +88,19 @@
     <div class="container-5">
         <h2>Holler At Me</h2>
     </div>
-    <form class="form1" action="">
+    <form class="form1" action="/thanks" method="POST">
         <label for="name" class="name">
             Name
         </label>
-        <input id="name-input" type="text">
+        <input id="name-input" type="text" name="name">
         <label for="email">
             Email
         </label>
-        <input id="email-input" type="email">
+        <input id="email-input" type="email" name="email">
         <label for "message">
             Message
         </label>
-        <textarea id="message-input"></textarea>
+        <textarea id="message-input" name="message"></textarea>
         <button>
             Submit
         </button>
