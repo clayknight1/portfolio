@@ -18,18 +18,26 @@
         <nav class="nav right-mobile" role="navigation" id="side-nav">
             <ul>
                 <li>
-                    <i class= "fa fa-times fa-5x" id="close-nav"></i><button class="button-mobile">About</button>
+                    <i class="fa fa-times fa-5x" id="close-nav"></i>
+                    <button class="button-mobile" target="parent" name="about-scroll" id="close-nav-2">
+                        <a href="#about-scroll">About</a>
+                    </button>
+                </li>
                 </li>
                 <li>
-                    <button class="button-mobile">Portfolio</button>
+                    <button class="button-mobile" id="close-nav-3">
+                        <a href="#portfolio-scroll" >Portfolio</a>
+                    </button>
                 </li>
                 <li>
-                    <button class="button-mobile">Contact</button>
+                    <button class="button-mobile" id="close-nav-4">
+                        <a href="#contact-scroll">Contact</a>
+                    </button>
                 </li>
             </ul>
         </nav>
         <div class="header">
-                <i class="fa fa-bars fa-3x" id="hamburger"></i>
+            <i class="fa fa-bars fa-3x" id="hamburger"></i>
             <h1>
                 <%= person.firstName %>
                     <%= person.lastName %>
@@ -39,9 +47,11 @@
     <div class="container-2">
         <!-- <div class="group"> -->
         <div class="left-about">
+            <a name="about-scroll"></a>
             <h3>
                 About Me:
             </h3>
+
             <p>
                 Lorem ipsum dolor sit amet, pro omittam invidunt ex, id vel tollit prodesset accommodare. Te sed ornatus mediocritatem, est
                 in quot eirmod. Elit nobis similique ex mel. Cu nam harum ocurreret splendide, nam cu veri justo.
@@ -56,9 +66,11 @@
         </div>
         <!-- </div> -->
     </div>
-    <div class="container-3">
+    <div class="container-3" id="portfolio-scroll">
         <div>
-            <a href="#" class=".hvr-grow"><img src="./vstda.png" class="projects shadow first-project grow"></a>
+            <a href="#" class=".hvr-grow">
+                <img src="./vstda.png" class="projects shadow first-project grow">
+            </a>
         </div>
         <div>
             <img src="./mortgage-calculator.png" class="projects shadow second-project grow">
@@ -88,7 +100,9 @@
     <div class="container-5">
         <h2>Holler At Me</h2>
     </div>
+    <a name="contact-scroll" />
     <form class="form1" action="/thanks" method="POST">
+        
         <label for="name" class="name">
             Name
         </label>
@@ -105,7 +119,12 @@
             Submit
         </button>
     </form>
-    <script src="main.js"></script>
+
+
+    <footer class="footer-container">
+
+    </footer>
 </body>
+<script src="main.js"></script>
 
 </html>

@@ -3,7 +3,6 @@
     grid-template-rows: 450px;
     grid-template-columns: 10% 1fr  1fr 1fr 1fr 10%;
     grid-row-gap: 30px;
-    background-attachment: fixed;
 }
 .container-2 {
     display: grid;
@@ -34,6 +33,19 @@
     text-align: center;
     font-size: 7vw;
     font-family: 'Raleway', sans-serif;
+}
+
+.thanks-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: white;
+    justify-items: center;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 120px;
 }
 
 .header {

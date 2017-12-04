@@ -8,3 +8,6 @@ function closeNavHandler() {
 
 document.getElementById('hamburger').onclick = hamburgerHandler;
 document.getElementById('close-nav').onclick = closeNavHandler;
+document.getElementById('close-nav-2').onclick = closeNavHandler;
+document.getElementById('close-nav-3').onclick = closeNavHandler;
+document.getElementById('close-nav-4').onclick = closeNavHandler;
