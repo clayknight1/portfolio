@@ -1,29 +1,88 @@
 .container {
     display: grid;
     grid-template-rows: 450px;
-    grid-template-columns: 10% 1fr  1fr 1fr 1fr 10%;
+    grid-template-columns:  1fr ;
     grid-row-gap: 30px;
+    position: relative;
+    text-align: center;
 }
+
+
 .container-2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 10px;
     padding: 2em 0px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.container:after {
+    background: linear-gradient(-45deg, #000000 16px, transparent 0), linear-gradient(45deg, #050505 16px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 32px 32px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 25px;
+}
+
+.portfolio-title {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+    text-align: center;
+    /* font-size: 7vw; */
+    font-family: 'Raleway', sans-serif;
+    
+}
+.portfolio-title h4,
+.container-5 h4 {
+    margin-top: 2%;
+    margin-bottom: 0;
+    font-size: 4vw;
 }
 .container-3 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 450px;
+    grid-template-columns:  1fr ;
     background-color: white;
     padding: 5%;
     text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.featured-title {
+    grid-template-rows: 450px;
+    grid-template-columns:  1fr;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.container-wrapper-white {
+    background-color: white;
 }
 .container-4 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-auto-rows: auto;
     grid-gap: 20px;
     background-color: white;
     padding: 5%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .container-5 {
@@ -59,6 +118,7 @@
     width: 400px;
     right:-400px;
     background-color: white;
+    z-index: 10;
     /* display: none;
     
     */
@@ -92,6 +152,7 @@ ul li a {
 
 .left-about {
     padding-left: 20px;
+    font-family: 'Lora', serif;
 
 }
 
@@ -123,7 +184,7 @@ ul li a {
 .projects {
     width: 80%;
     height: auto;
-    border:1px solid rgb(89, 89, 89);
+    /* border:1px solid rgb(89, 89, 89); */
     border-radius: 0px;
     margin: 20px 0;
 }
@@ -135,12 +196,12 @@ ul li a {
 
 @media only screen and (max-width: 900px) {
     .react {
-        grid-column: 2 / span 1;
+        grid-column: 2 / 3;
     }
 }
 
-@media only screen and (max-width: 1214 px) {
+@media only screen and (min-width: 900px) {
     .fourth-project {
-        grid-column: 2 / span 1;
+        grid-column: 2 / 3;
     }
 }

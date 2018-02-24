@@ -10,7 +10,10 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:600|Raleway:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Esteban" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
     <script src="https://use.fontawesome.com/bbe3a347a0.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Esteban|Playfair+Display:400i" rel="stylesheet">
 </head>
 
 <body class="preload">
@@ -26,7 +29,7 @@
                 </li>
                 <li>
                     <button class="button-mobile" id="close-nav-3">
-                        <a href="#portfolio-scroll" >Portfolio</a>
+                        <a href="#portfolio-scroll">Portfolio</a>
                     </button>
                 </li>
                 <li>
@@ -38,71 +41,106 @@
         </nav>
         <div class="header">
             <i class="fa fa-bars fa-3x" id="hamburger"></i>
-            <h1>
-                <%= person.firstName %>
-                    <%= person.lastName %>
+            <h1 id="logo">
+                <!-- <%= person.firstName %> <%= person.lastName %> -->
+                CLAY KNIGHT
             </h1>
+            <h2 class="subtitle">
+                Full-Stack Developer
+            </h2>
         </div>
     </div>
     <div class="container-2">
         <!-- <div class="group"> -->
         <div class="left-about">
             <a name="about-scroll"></a>
-            <h3>
-                About Me:
+            <h3 class="about-header">
+                About Me
             </h3>
 
-            <p>
-                Lorem ipsum dolor sit amet, pro omittam invidunt ex, id vel tollit prodesset accommodare. Te sed ornatus mediocritatem, est
-                in quot eirmod. Elit nobis similique ex mel. Cu nam harum ocurreret splendide, nam cu veri justo.
-                <br>
-                <br> Est errem everti ea, epicuri dignissim ei quo. Mei ad decore graecis eligendi, quod bonorum sit et. Tota
-                oratio albucius in per, usu omnis expetendis inciderint ei. Te quo molestiae inciderint adversarium, quem
-                petentium definitionem et sea, ut voluptua similique eos.
+            <p class="about-text">
+                I am an aspiring full-stack developer with a special knack for the front-end. Spending 4 years at the 861 Groupe as an SEO
+                Specialist I always marveled at the fine craft the developers honed day in and day out. The approach of “I’ve
+                never done done that before, but I can figure it out” always really impressed me. Of all the attitudes I’ve
+                ever respected in other people and myself as well the “I can figure it out” mindset is the one I’ve valued
+                most.
+                </br>
+                </br>
+
+                This all led me to taking the leap into the journey of becoming a web developer. I joined the excellent full-stack development
+                program at Origin Code Academy in late 2017 and finished up in February of this year. I really liked that
+                Origin made a point to teach you how to think and figure stuff out instead of blindly following step by step
+                instructions. I now having coding on the brain to say the least and when I’m not surfing in front of my house
+                I spend countless hours trying new things that seem impossible off the bat.</br>
+                </br>
+
+                I now am seeking an opportunity in the real world with a team that is willing to give me a chance. The most important thing
+                to me is to find a company with strong leadership that will allow me to flourish in a junior developer role.
+                I am an extremely hard worker and I am ready to grind as hard as you are willing to let me.
             </p>
         </div>
         <div class="right-about">
-            <img src="./old-guy-resize.jpg" class="portrait">
+            <img src="./clay-pic.jpg" class="portrait">
         </div>
         <!-- </div> -->
     </div>
-    <div class="container-3" id="portfolio-scroll">
-        <div>
-            <a href="#" class=".hvr-grow">
-                <img src="./vstda.png" class="projects shadow first-project grow">
-            </a>
-        </div>
-        <div>
-            <img src="./mortgage-calculator.png" class="projects shadow second-project grow">
-        </div>
-        <div>
-            <img src="./change-calculator.png" class="projects shadow third-project grow">
-        </div>
-        <div>
-            <img src="./top-spots.png" class="projects shadow fourth-project grow">
-        </div>
+    <div class="portfolio-title" id="portfolio-scroll">
+        <h4>
+            <span class="project-bottom">PROJECTS</span>
+        </h4>
     </div>
-    <div class="container-4">
-        <div class="js">
-            <img src="./js-logo.svg" width="100" height="100">
+    <div class="container-wrapper-white">
+        <div class="container-3">
+            <div>
+                <a href="#" class=".hvr-grow">
+                    <img src="./two-iphones-spread.png" class="projects first-project grow" id="featured-project">
+                </a>
+            </div>
+            <div>
+                <h2 class="featured-title">
+                    San Diego JS: Mobile Check-In App
+                </h2>
+            </div>
         </div>
-        <div class="node">
-            <img src="./node-logo.svg" width="100" height="100">
+        <div class="project-container">
+            <div>
+                <img src="./mortgage-calculator.png" class="projects shadow second-project grow">
+            </div>
+            <div>
+                <img src="./change-calculator.png" class="projects shadow third-project grow">
+            </div>
+            <div>
+                <img src="./vstda.png" class="projects shadow fourth-project grow">
+            </div>
         </div>
-        <div class="mongo">
-            <img src="./mongo-logo.svg" width="100" height="100">
-        </div>
-        <div class="react">
-            <img src="./react-logo.svg" width="70" height="70">
+
+    </div>
+    <div class="made">
+        <h4 class="made-header">Made With</h4>
+    </div>
+    <div class="container-wrapper-white">
+        <div class="container-4">
+            <div class="js">
+                <img src="./js-logo.svg" width="100" height="100">
+            </div>
+            <div class="node">
+                <img src="./node-logo.svg" width="100" height="100">
+            </div>
+            <div class="mongo">
+                <img src="./mongo-logo.svg" width="100" height="100">
+            </div>
+            <div class="react">
+                <img src="./react-logo.svg" width="70" height="70">
+            </div>
         </div>
     </div>
     </div>
     <div class="container-5">
-        <h2>Holler At Me</h2>
+        <h4 class="contact-header">Get in Touch</h4>
     </div>
     <a name="contact-scroll" />
     <form class="form1" action="/thanks" method="POST">
-        
+
         <label for="name" class="name">
             Name
         </label>

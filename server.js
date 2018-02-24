@@ -19,8 +19,8 @@ app.set('view engine', 'ejs');
 app.get('/', (req, res) => {
   const data = {
     person: {
-      firstName: 'Clay',
-      lastName: 'Knight'
+      firstName: 'CLAY',
+      lastName: 'KNIGHT'
     }
   }
   res.render('index', data);
