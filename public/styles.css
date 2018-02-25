@@ -192,6 +192,12 @@ input:focus {
     outline: 3px solid gold;
 }
 
+.featured-title {
+    background-color: #000000;
+    color: white;
+    height: 100%;
+}
+
 @media (min-width: 700px) {
     form {
         grid-template-columns: 200px 1fr;
