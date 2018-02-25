@@ -35,14 +35,17 @@
     grid-template-columns: 1fr;
     background-color: white;
     text-align: center;
+    /* margin-bottom: 100px; */
     /* font-size: 7vw; */
     font-family: 'Raleway', sans-serif;
+    padding-top: 50px;
+    padding-bottom: 30px;
     
 }
 .portfolio-title h4,
 .container-5 h4 {
     margin-top: 2%;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
     font-size: 4vw;
 }
 .container-3 {

@@ -170,6 +170,7 @@ form button {
 #featured-project {
     max-height: 300px;
     width: auto;
+    margin-top: 80px;
 }
 
 form button:hover {
@@ -193,7 +194,7 @@ input:focus {
 }
 
 .featured-title {
-    background-color: #000000;
+    background-color: #202021;
     color: white;
     height: 100%;
 }
