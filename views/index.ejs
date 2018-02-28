@@ -22,25 +22,29 @@
         <nav class="nav right-mobile" role="navigation" id="side-nav">
             <ul>
                 <li>
-                    <i class="fa fa-times fa-5x" id="close-nav"></i>
+                    <i class="fa fa-times fa-4x" id="close-nav"></i>
                     <button class="button-mobile" target="parent" name="about-scroll" id="close-nav-2">
-                        <a href="#about-scroll">About</a>
+                        <a href="#about-scroll">ABOUT</a>
                     </button>
                 </li>
-                </li>
+                <!-- </li> -->
                 <li>
                     <button class="button-mobile" id="close-nav-3">
-                        <a href="#portfolio-scroll">Portfolio</a>
+                        <a href="#portfolio-scroll">PROJECTS</a>
                     </button>
                 </li>
                 <li>
                     <button class="button-mobile" id="close-nav-4">
-                        <a href="#contact-scroll">Contact</a>
+                        <a href="#contact-scroll">CONTACT</a>
                     </button>
                 </li>
             </ul>
         </nav>
         <div class="header">
+            <div class="social-icons">
+                <a href ="https://www.linkedin.com/in/clayk/"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+                <a href="https://github.com/clayknight1"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+            </div>
             <i class="fa fa-bars fa-2x" id="hamburger"></i>
             <h1 id="logo">
                 <!-- <%= person.firstName %> <%= person.lastName %> -->
@@ -66,8 +70,9 @@
                 </br>
 
                 This all led me to taking the leap into the journey of becoming a web developer. I joined the excellent full-stack development
-                program at Origin Code Academy in late 2017 and finished up in February of this year. I now having coding on the brain to say the least and when I’m not surfing in front of my house
-                I spend countless hours trying new things that seem impossible off the bat.</br>
+                program at Origin Code Academy in late 2017 and finished up in February of this year. I now having coding
+                on the brain to say the least and when I’m not surfing in front of my house I spend countless hours trying
+                new things that seem impossible off the bat.</br>
                 </br>
             </p>
         </div>
@@ -88,11 +93,12 @@
                     <span class="project-underline">San Diego JS: Mobile Check-In App</span>
                 </h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non justo quis massa condimentum imperdiet. Phasellus scelerisque
-                    pellentesque purus non auctor. In malesuada sed urna feugiat finibus. Nulla tristique ipsum nec sapien
-                    dictum tempor. Cras sagittis eget eros id egestas. Fusce molestie nec metus ac venenatis. Ut tortor neque,
-                    egestas placerat viverra tempor, congue non lorem. Morbi porttitor faucibus urna, eu maximus nunc pretium
-                    non. Nam ut lacinia lorem.
+                    San Diego JS Check-in is a mobile check-in app for the San Diego Javascript meetup group that allows 
+                    you to view events, RSVP to events and check-in while at an event. We built it for 
+                    ios and Android using React Native with Redux. We integrated Google Maps utilizing 
+                    location data from the meetup API. Using geo-location the app verifies users are physically 
+                    at the event. My biggest challenge with this project was setting up oAuth for easy login
+                    with Github and Google+.
                 </p>
             </div>
             <div class="two">
@@ -102,7 +108,7 @@
             </div>
             <div class="three">
                 <a href="#" class=".hvr-grow">
-                    <img src="./change-transparent.png" class="projects first-project grow" id="featured-project">
+                    <img src="./doorstop.png" class="projects first-project grow" id="featured-project">
                 </a>
             </div>
             <div class="featured-title four">
@@ -110,11 +116,11 @@
                     <span class="project-underline">Door Stop Foods - Web App</span>
                 </h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non justo quis massa condimentum imperdiet. Phasellus scelerisque
-                    pellentesque purus non auctor. In malesuada sed urna feugiat finibus. Nulla tristique ipsum nec sapien
-                    dictum tempor. Cras sagittis eget eros id egestas. Fusce molestie nec metus ac venenatis. Ut tortor neque,
-                    egestas placerat viverra tempor, congue non lorem. Morbi porttitor faucibus urna, eu maximus nunc pretium
-                    non. Nam ut lacinia lorem.
+                    Door Stop Food is a food delivery web app that lets you search local restaraunts, view their menus
+                    and order food for delivery. We integrated 2 access levels, one for users and one for restaraunt
+                    admin. The front-end was built using React with Redux. Our REST API was built with Loopback JS.
+                    The layout was built primarily using Flexbox and CSS Grid. We built this project in an AGILE
+                    environment.
                 </p>
             </div>
             <div class="featured-title five">
@@ -122,16 +128,14 @@
                     <span class="project-underline">Movie Finder - Web App</span>
                 </h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non justo quis massa condimentum imperdiet. Phasellus scelerisque
-                    pellentesque purus non auctor. In malesuada sed urna feugiat finibus. Nulla tristique ipsum nec sapien
-                    dictum tempor. Cras sagittis eget eros id egestas. Fusce molestie nec metus ac venenatis. Ut tortor neque,
-                    egestas placerat viverra tempor, congue non lorem. Morbi porttitor faucibus urna, eu maximus nunc pretium
-                    non. Nam ut lacinia lorem.
+                    Movie Finder is a web app that lets users search for movies by entering keywords in the 
+                    search box. It queries the OMDB API's massive movie database providing incredibly in-depth results.
+                    I built Movie Finder using React with Redux and React Router.  
                 </p>
             </div>
             <div class="six">
                 <a href="#" class=".hvr-grow">
-                    <img src="./change-transparent.png" class="projects first-project grow" id="featured-project">
+                    <img src="./movie-finder.png" class="projects first-project grow" id="featured-project">
                 </a>
             </div>
         </div>

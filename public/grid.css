@@ -4,7 +4,7 @@
     grid-template-columns:  1fr ;
     grid-row-gap: 30px;
     position: relative;
-    text-align: center;
+    text-align: left;
 }
 
 
@@ -147,6 +147,14 @@
     /* -webkit-animation: slide 1s;
     animation: slide 1s; */
 
+}
+
+#close-nav {
+    cursor: pointer;
+}
+
+#hamburger {
+    cursor: pointer;
 }
 @-webkit-keyframes slide {
     100% { right: 0; }

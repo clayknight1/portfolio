@@ -10,12 +10,19 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 
 }
+
+/* a { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
 .preload * {
     -webkit-animation: none !important;
     -moz-animation: none !important;
     -ms-animation: none !important;
     -o-animation: none !important;
-  }
+  } */
+
 .header {
     color: white;
     background-image: url('./ocean-surface.jpg');
@@ -106,6 +113,32 @@ body {
 .left-about {
     color: white;
     background-color: black;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 9px;
+}
+
+.social-icons a {
+
+    color: black;
+}
+
+@media (max-width: 605px) {
+    .social-icons {
+        flex-direction: row;
+    }
+    .social-icons i {
+        padding: 10px;
+    }
+}
+.social-icons i {
+    padding: 10px;
 }
 
 .right-about {
@@ -215,10 +248,11 @@ input:focus {
 
 .featured-title p {
     padding: 30px 30px 30px 30px;
-    font-size: 12px;
+    font-size: 15px;
     text-align: left;
     font-family: lato, sans-serif;
     letter-spacing: 1.6px;
+    line-height: 19px;
 }
 
 @media (min-width: 700px) {
@@ -329,5 +363,9 @@ input:focus {
   
 
   /* Thank You Page */
+
+
+
+  
 
   
