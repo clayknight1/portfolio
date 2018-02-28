@@ -83,17 +83,7 @@
     }
 }
 
-.featured-title {
-    /* grid-template-rows: 450px;
-    grid-template-columns:  1fr; */
-    text-align: center;
-    max-width: 1300px;
-    /* margin: 0 auto; */
-}
 
-.featured-title p {
-    font-size: 13px;
-}
 
 .project-container {
     display: grid;
