@@ -234,3 +234,7 @@ ul li a {
         grid-column: 2 / 3;
     }
 }
+
+@media only screen and (min-width) {
+    
+}
